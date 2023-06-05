@@ -6,17 +6,20 @@ export const MainContainer = styled.main`
 `
 
 export const LoginSide = styled.div`
-  flex: 1;
-  padding-left: 112px;
-  padding-top: 47.15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  /* padding-left: 7rem;
+  padding-top: 2.947rem; */
 
   img {
-    padding-bottom: 121.51px;
+    /* padding-bottom: 7.594rem; */
   }
 
   p {
-    margin-top: 16px;
-    margin-bottom: 40px;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
   }
   
   span {
@@ -35,19 +38,19 @@ export const LoginSide = styled.div`
     flex-direction: column;
 
     input {
-      margin-bottom: 16px;
-      height: 53px;
-      padding: 16px 12px;
-      border: 1px solid #E2E8F0;
-      border-radius: 4px;
+      margin-bottom: 1rem;
+      height: 3.313rem;
+      padding: 1rem 0.75rem;
+      border: 0.063rem solid #E2E8F0;
+      border-radius: 0.25rem;
 
       &:hover,
       &:focus {
-        outline: 1px solid #7C3AED;
+        outline: 0.25rem solid #7C3AED;
       }
 
       &:disabled {
-        border: 1px solid #E2E8F0;
+        border: 0.25rem solid #E2E8F0;
         background-color: #F8FAFC;
         &:hover, &:focus {
           outline: none;
@@ -56,14 +59,14 @@ export const LoginSide = styled.div`
     }
 
     button {
-      padding: 16px 24px;
+      padding: 1rem 1.5rem;
       background: #7C3AED;
-      border-radius: 4px;
+      border-radius: 0.25rem;
       border: none;
       font-weight: 700;
       color: #FFFFFF;
-      margin-top: 16px;
-      margin-bottom: 16px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     button:hover {
@@ -73,21 +76,37 @@ export const LoginSide = styled.div`
   }
 `
 
+export const ContentBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 90%;
+  max-height: 47rem;
+  width: fit-content;
+
+  div {
+    /* width: 100%; */
+  }
+`
+
 export const ErrorMessage = styled.p`
   color: #ED3A5A;
-  font-size: 14px;
-  margin-top: 4px;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
 `
 
 export const LoginForm = styled.div`
-  padding-right: 208px;
+  /* padding-right: 13rem; */
+  width: 24rem;
+  height: 30rem;
 `
 
 export const Label = styled.label`
   font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 8px;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  margin-bottom: 0.5rem;
 `
 export const PasswordLabel = styled.div`
   display: flex;
@@ -95,7 +114,7 @@ export const PasswordLabel = styled.div`
 `
 
 export const ImageSide = styled.div`
-  flex: 1;
+  width: 50vw;
   position: relative;
   background-color: #7C3AED;
 `
