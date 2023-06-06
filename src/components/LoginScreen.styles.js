@@ -6,20 +6,17 @@ export const MainContainer = styled.main`
 `
 
 export const LoginSide = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50vw;
-  /* padding-left: 7rem;
-  padding-top: 2.947rem; */
+  padding-left: 112px;
+  padding-top: 47.15px;
 
   img {
-    /* padding-bottom: 7.594rem; */
+    padding-bottom: 121.51px;
   }
 
   p {
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+    margin-top: 16px;
+    margin-bottom: 40px;
   }
   
   span {
@@ -27,6 +24,7 @@ export const LoginSide = styled.div`
     cursor: pointer;
     font-weight: 600;
     margin-left: auto;
+    margin-top: 8px;
   }
 
   span:hover {
@@ -38,19 +36,18 @@ export const LoginSide = styled.div`
     flex-direction: column;
 
     input {
-      margin-bottom: 1rem;
-      height: 3.313rem;
-      padding: 1rem 0.75rem;
-      border: 0.063rem solid #E2E8F0;
-      border-radius: 0.25rem;
+      height: 53px;
+      padding: 16px 12px;
+      border: 1px solid #E2E8F0;
+      border-radius: 4px;
 
       &:hover,
       &:focus {
-        outline: 0.25rem solid #7C3AED;
+        outline: 1px solid #7C3AED;
       }
 
       &:disabled {
-        border: 0.25rem solid #E2E8F0;
+        border: 1px solid #E2E8F0;
         background-color: #F8FAFC;
         &:hover, &:focus {
           outline: none;
@@ -59,14 +56,14 @@ export const LoginSide = styled.div`
     }
 
     button {
-      padding: 1rem 1.5rem;
+      padding: 16px 24px;
       background: #7C3AED;
-      border-radius: 0.25rem;
+      border-radius: 4px;
       border: none;
       font-weight: 700;
       color: #FFFFFF;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
 
     button:hover {
@@ -74,39 +71,38 @@ export const LoginSide = styled.div`
       cursor: pointer;
     }
   }
-`
 
-export const ContentBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 90%;
-  max-height: 47rem;
-  width: fit-content;
+  @media screen and (max-width: 1366px) {
+    padding-left: 56px;
+    padding-top: 23.57px;
 
-  div {
-    /* width: 100%; */
+    img {
+      padding-bottom: 60.75px;
+    }
+
+    p {
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
   }
 `
 
 export const ErrorMessage = styled.p`
+  display: none;
   color: #ED3A5A;
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
+  font-size: 13px;
 `
 
 export const LoginForm = styled.div`
-  /* padding-right: 13rem; */
-  width: 24rem;
-  height: 30rem;
+  max-width: 369px;
 `
 
 export const Label = styled.label`
   font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.313rem;
-  margin-bottom: 0.5rem;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 `
 export const PasswordLabel = styled.div`
   display: flex;
@@ -114,7 +110,7 @@ export const PasswordLabel = styled.div`
 `
 
 export const ImageSide = styled.div`
-  width: 50vw;
+  flex: 1;
   position: relative;
   background-color: #7C3AED;
 `
